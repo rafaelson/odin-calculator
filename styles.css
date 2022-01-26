@@ -1,0 +1,42 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-wrapper {
+  height: 25em;
+  width: 18em;
+  display: grid;
+  grid-template-rows: 1fr 2.25fr 0.25fr;
+}
+
+.mid {
+  display: grid;
+  grid-template-columns: 0.75fr auto auto;
+}
+
+.mid-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.operators {
+  display: grid;
+}
+
+.ac-equal {
+  display: grid;
+  grid-template-rows: auto 0.85fr;
+}
+
+.number {
+  border: 1px solid black;
+}
