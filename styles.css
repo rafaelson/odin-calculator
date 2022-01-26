@@ -18,6 +18,14 @@ body {
   grid-template-rows: 1fr 2.25fr 0.25fr;
 }
 
+.display {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .mid {
   display: grid;
   grid-template-columns: 0.75fr auto auto;
@@ -26,6 +34,11 @@ body {
 .mid-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bot-buttons {
+  display: grid;
+  grid-template-columns: 0.448fr auto;
 }
 
 .operators {
@@ -39,4 +52,7 @@ body {
 
 .number {
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
