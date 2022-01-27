@@ -24,8 +24,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: #d3dedc;
 }
 
+.display-top {
+}
+
+.display-bot {
+  font-size: 2em;
+}
 .mid {
   display: grid;
   grid-template-columns: 0.75fr auto auto;
@@ -34,15 +41,18 @@ body {
 .mid-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: #92a9bd;
 }
 
 .bot-buttons {
   display: grid;
   grid-template-columns: 0.448fr auto;
+  background-color: #92a9bd;
 }
 
 .operators {
   display: grid;
+  background-color: #7c99ac;
 }
 
 .ac-equal {
@@ -50,9 +60,17 @@ body {
   grid-template-rows: auto 0.85fr;
 }
 
-.number {
+.ac {
+  background-color: #ffefef;
+}
+
+.button {
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.button:hover {
+  box-shadow: inset 0 0 0.5em black;
+  transition: 0.3s ease;
 }
