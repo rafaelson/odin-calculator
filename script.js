@@ -29,6 +29,7 @@ document.querySelectorAll(".operator").forEach((elem) => {
       cleanDisplay();
     } else {
       equal();
+      operation = elem.textContent;
       value1 = Number(displayBot.textContent);
     }
   });
@@ -67,8 +68,6 @@ function selectOperation(op) {
       break;
     case "÷":
       displayBot.textContent = div();
-      break;
-    case "=":
       break;
   }
   resetValues();
