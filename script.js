@@ -55,21 +55,31 @@ function resetValues() {
   value2 = null;
 }
 
+function checkIfIntegerAndPrint(x) {
+  if (!Number.isInteger(x)) {
+    displayBot.textContent = x.toFixed(1);
+  } else {
+    displayBot.textContent = x;
+  }
+}
+
 function selectOperation(op) {
+  let result;
   switch (op) {
     case "+":
-      displayBot.textContent = add();
+      result = add();
       break;
     case "-":
-      displayBot.textContent = sub();
+      result = sub();
       break;
     case "×":
-      displayBot.textContent = mul();
+      result = mul();
       break;
     case "÷":
-      displayBot.textContent = div();
+      result = div();
       break;
   }
+  checkIfIntegerAndPrint(result);
   resetValues();
 }
 
